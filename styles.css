@@ -25,6 +25,7 @@ body {
 }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
+input, select, textarea, button { font: inherit; }
 
 .container {
   width: min(1120px, calc(100% - 2rem));
@@ -66,7 +67,7 @@ a { color: inherit; text-decoration: none; }
 
 .top-section {
   position: relative;
-  min-height: 88vh;
+  min-height: 86vh;
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -82,8 +83,8 @@ a { color: inherit; text-decoration: none; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10, 12, 10, 0.26), rgba(10, 12, 10, 0.82)),
-    linear-gradient(90deg, rgba(10, 12, 10, 0.72), rgba(10, 12, 10, 0.24));
+    linear-gradient(180deg, rgba(10, 12, 10, 0.08), rgba(10, 12, 10, 0.52)),
+    linear-gradient(90deg, rgba(10, 12, 10, 0.48), rgba(10, 12, 10, 0.12));
 }
 .top-content {
   position: relative;
@@ -102,7 +103,7 @@ a { color: inherit; text-decoration: none; }
 .top-line {
   margin: 0.9rem 0 0;
   font-size: 1.1rem;
-  color: rgba(255,255,255,0.84);
+  color: rgba(255,255,255,0.92);
 }
 .top-actions {
   display: flex;
@@ -117,6 +118,8 @@ a { color: inherit; text-decoration: none; }
   padding: 0.9rem 1.25rem;
   border-radius: 999px;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 .button-primary {
   background: var(--stone);
@@ -156,13 +159,13 @@ a { color: inherit; text-decoration: none; }
 .section-head.narrow { max-width: 42rem; }
 
 .simple-grid,
-.enquiry-grid,
 .contact-wrap {
   display: grid;
   gap: 1.4rem;
   grid-template-columns: 1fr 1fr;
   align-items: start;
 }
+.contact-wrap-wide { grid-template-columns: 0.8fr 1.2fr; }
 .side-by-side {
   display: grid;
   gap: 1rem;
@@ -241,10 +244,27 @@ a { color: inherit; text-decoration: none; }
   margin: 0 0 0.9rem;
   color: var(--text-soft);
 }
-.dog-copy a {
+.dog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+.mini-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 1rem;
+  border-radius: 999px;
+  background: var(--stone);
+  color: var(--charcoal);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.mini-button-ghost {
+  background: transparent;
   color: var(--stone);
-  text-decoration: underline;
-  text-underline-offset: 0.14em;
+  border: 1px solid rgba(255,255,255,0.14);
 }
 
 .work-grid {
@@ -262,26 +282,63 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.94rem;
 }
 
-.info-card,
-.contact-box {
+.contact-form {
   background: var(--charcoal-2);
   border: 1px solid var(--border);
   border-radius: 24px;
   padding: 1.35rem;
 }
-.contact-section .contact-box p:last-child { margin-bottom: 0; }
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.contact-form label {
+  display: block;
+}
+.contact-form span {
+  display: block;
+  margin: 0 0 0.45rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--charcoal-3);
+  color: var(--text);
+  padding: 0.9rem 1rem;
+}
+.contact-form textarea { resize: vertical; min-height: 9rem; }
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.form-note {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
 
 @media (max-width: 900px) {
   .simple-grid,
-  .enquiry-grid,
   .contact-wrap,
   .dog-card-wide,
   .work-grid,
   .dog-grid,
-  .side-by-side {
+  .side-by-side,
+  .form-grid,
+  .contact-wrap-wide {
     grid-template-columns: 1fr;
   }
 
   .site-nav { display: none; }
-  .top-section { min-height: 76vh; }
+  .top-section { min-height: 72vh; }
 }

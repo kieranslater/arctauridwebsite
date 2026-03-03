@@ -1,31 +1,22 @@
-# Arctaurid Gundogs website
+# Arctaurid Gundogs
 
 Static site ready for GitHub Pages.
 
-## Files
-- `index.html`
-- `styles.css`
-- `assets/`
+## Before publishing
 
-## To upload to GitHub Pages
+1. Replace `your@email.com` in `index.html` and `script.js` with your real email.
+2. Add pedigree links where you want them.
+3. Adjust any dog notes or images.
+
+## Publish on GitHub Pages
+
 1. Create or open your repository.
-2. Upload all files from this folder.
-3. Commit to your main branch.
-4. In GitHub, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select **main** and **/(root)**.
-7. Save.
+2. Upload the contents of this folder.
+3. In repository settings, open **Pages**.
+4. Set the source to the main branch / root folder.
+5. Save and wait for the site to publish.
 
-Your project-site URL should usually be:
-`https://kieranslater.github.io/arctauridwebsite/`
+## Contact form
 
-## Easy edits
-- Main text: `index.html`
-- Colours and layout: `styles.css`
-- Photos: replace files in `assets/` using the same filenames
-
-## Placeholders still to fill in
-- contact email
-- Instagram or other contact route
-- pedigree links for each dog
-- any extra notes you want on each dog
+This version uses a simple email form for GitHub Pages.
+Dog enquiry buttons jump to the form and preselect the dog and enquiry type.

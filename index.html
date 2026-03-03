@@ -24,7 +24,6 @@
           <a href="#about">About</a>
           <a href="#dogs">Dogs</a>
           <a href="#work">Work</a>
-          <a href="#enquiries">Enquiries</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -38,8 +37,8 @@
           <h1>Arctaurid Gundogs</h1>
           <p class="top-line">Dogs, pedigrees and enquiries</p>
           <div class="top-actions">
-            <a class="button button-primary" href="#dogs">Dogs</a>
-            <a class="button button-secondary" href="#enquiries">Enquiries</a>
+            <a class="button button-primary" href="#dogs">Our Dogs</a>
+            <a class="button button-secondary" href="#contact">Contact</a>
           </div>
         </div>
       </section>
@@ -50,8 +49,7 @@
             <p class="section-label">About</p>
             <h2>A small working Cocker Spaniel kennel.</h2>
             <p>
-              This first version keeps things simple. Dog pages can grow over time as you add pedigrees,
-              results and more photographs.
+              A simple first version, with room to add pedigrees, results and more photographs over time.
             </p>
           </div>
           <div class="side-by-side">
@@ -83,7 +81,10 @@
                   <h3>Merlin</h3>
                   <p class="dog-meta">Dog · Born April 2025</p>
                   <p>By Tarncrag Razzmataz x Dance River Penny.</p>
-                  <p><a href="#enquiries">Stud enquiries</a> can sit here later.</p>
+                  <div class="dog-actions">
+                    <a class="mini-button" href="#contact" data-dog="Merlin" data-interest="stud">Stud enquiry</a>
+                    <a class="mini-button mini-button-ghost" href="#contact" data-dog="Merlin" data-interest="general">Contact us</a>
+                  </div>
                 </div>
               </article>
             </div>
@@ -96,12 +97,16 @@
             </summary>
             <div class="group-body dog-grid">
               <article class="dog-card">
-                <img src="assets/fern.jpg" alt="Fern with trophy and certificates" />
+                <img src="assets/fern.jpg" alt="Fern with rosette and certificate" />
                 <div class="dog-copy">
                   <h3>Fern</h3>
-                  <p class="dog-meta">Bitch</p>
+                  <p class="dog-meta">Bitch · FTW/OFTAW Dance River Penny</p>
                   <p>Novice winner at Ditchingham Estate in 2023.</p>
                   <p>My main shooting dog.</p>
+                  <div class="dog-actions">
+                    <a class="mini-button" href="#contact" data-dog="Fern" data-interest="litter">Litter enquiry</a>
+                    <a class="mini-button mini-button-ghost" href="#contact" data-dog="Fern" data-interest="general">Contact us</a>
+                  </div>
                 </div>
               </article>
 
@@ -112,6 +117,10 @@
                   <p class="dog-meta">Bitch · 2026 novice</p>
                   <p>Lovely hunting style.</p>
                   <p>Really attacks the ground.</p>
+                  <div class="dog-actions">
+                    <a class="mini-button" href="#contact" data-dog="Finch" data-interest="litter">Litter enquiry</a>
+                    <a class="mini-button mini-button-ghost" href="#contact" data-dog="Finch" data-interest="general">Contact us</a>
+                  </div>
                 </div>
               </article>
 
@@ -119,9 +128,13 @@
                 <img src="assets/newt.jpg" alt="Newt portrait" />
                 <div class="dog-copy">
                   <h3>Newt</h3>
-                  <p class="dog-meta">Bitch · 2026 novice</p>
+                  <p class="dog-meta">Bitch · FTAW Phar Lap of Arctaurid</p>
+                  <p>Novice bitch for 2026.</p>
                   <p>2nd at her second trial.</p>
-                  <p>Lovely hunting bitch.</p>
+                  <div class="dog-actions">
+                    <a class="mini-button" href="#contact" data-dog="Newt" data-interest="litter">Litter enquiry</a>
+                    <a class="mini-button mini-button-ghost" href="#contact" data-dog="Newt" data-interest="general">Contact us</a>
+                  </div>
                 </div>
               </article>
 
@@ -129,9 +142,13 @@
                 <img src="assets/reed.jpg" alt="Reed portrait" />
                 <div class="dog-copy">
                   <h3>Reed</h3>
-                  <p class="dog-meta">Bitch · Fern daughter</p>
-                  <p>Quick learner.</p>
-                  <p>One for next season.</p>
+                  <p class="dog-meta">Bitch · Arctaurid Sanderling</p>
+                  <p>Born April 2025 to Fern and Tarncrag Razzmataz.</p>
+                  <p>Quick learner and one for next season.</p>
+                  <div class="dog-actions">
+                    <a class="mini-button" href="#contact" data-dog="Reed" data-interest="litter">Litter enquiry</a>
+                    <a class="mini-button mini-button-ghost" href="#contact" data-dog="Reed" data-interest="general">Contact us</a>
+                  </div>
                 </div>
               </article>
             </div>
@@ -166,35 +183,59 @@
         </div>
       </section>
 
-      <section id="enquiries" class="section">
-        <div class="container enquiry-grid">
-          <article class="info-card">
-            <p class="section-label">Stud Dog</p>
-            <h2>Stud enquiries.</h2>
-            <p>Please get in touch for current details.</p>
-          </article>
-          <article class="info-card">
-            <p class="section-label">Litters</p>
-            <h2>Litter enquiries.</h2>
-            <p>Please get in touch for current or planned litters.</p>
-          </article>
-        </div>
-      </section>
-
       <section id="contact" class="section section-dark contact-section">
-        <div class="container contact-wrap">
+        <div class="container contact-wrap contact-wrap-wide">
           <div>
             <p class="section-label">Contact</p>
-            <h2>For enquiries, please get in touch.</h2>
-            <p>Add your email, phone or Instagram here.</p>
+            <h2>Contact us</h2>
+            <p>Use the form below for dog, litter or stud enquiries.</p>
           </div>
-          <div class="contact-box">
-            <p><strong>Email</strong><br />your@email.com</p>
-            <p><strong>Instagram</strong><br />@arctauridgundogs</p>
-            <p><strong>Location</strong><br />Add a rough location if you want one shown.</p>
-          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-grid">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" id="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" id="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                <span>Enquiry type</span>
+                <select name="interest" id="interest">
+                  <option value="general">General enquiry</option>
+                  <option value="stud">Stud enquiry</option>
+                  <option value="litter">Litter enquiry</option>
+                </select>
+              </label>
+              <label>
+                <span>Dog</span>
+                <select name="dog" id="dog">
+                  <option value="">No preference</option>
+                  <option>Merlin</option>
+                  <option>Fern</option>
+                  <option>Finch</option>
+                  <option>Newt</option>
+                  <option>Reed</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" id="message" rows="6" placeholder="Tell us a little about your enquiry." required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">Prepare email</button>
+              <p class="form-note">Replace the placeholder email address in the file before publishing.</p>
+            </div>
+          </form>
         </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
