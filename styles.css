@@ -231,11 +231,16 @@ input, select, textarea, button { font: inherit; }
 }
 .dog-gallery-two {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.75rem;
   padding: 0.75rem;
 }
-.dog-gallery-two img { aspect-ratio: 4 / 5; }
+.dog-gallery-two img {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: 720px;
+  object-position: center center;
+}
 .dog-card > img { aspect-ratio: 4 / 4.7; }
 .dog-copy {
   padding: 1.2rem 1.2rem 1.35rem;
@@ -345,4 +350,9 @@ input, select, textarea, button { font: inherit; }
 
   .site-nav { display: none; }
   .top-section { min-height: 72vh; }
+}
+
+
+@media (min-width: 900px) {
+  .dog-gallery-two { grid-template-columns: 1fr 1fr; align-items: start; }
 }
