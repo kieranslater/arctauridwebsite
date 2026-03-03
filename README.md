@@ -1,38 +1,31 @@
-# Arctaurid Gundogs
+# Arctaurid Gundogs website
 
-Simple static website ready for GitHub Pages.
+Static site ready for GitHub Pages.
 
-## What is included
-
+## Files
 - `index.html`
 - `styles.css`
-- `assets/` with compressed web-ready images
+- `assets/`
 
-## Uploading to GitHub Pages
+## To upload to GitHub Pages
+1. Create or open your repository.
+2. Upload all files from this folder.
+3. Commit to your main branch.
+4. In GitHub, open **Settings → Pages**.
+5. Under **Build and deployment**, choose **Deploy from a branch**.
+6. Select **main** and **/(root)**.
+7. Save.
 
-1. Create a new GitHub repository.
-2. Upload everything from this folder to the root of the repository.
-3. In GitHub, open **Settings** → **Pages**.
-4. Under **Build and deployment**, choose:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main`
-   - **Folder:** `/root`
-5. Save.
-6. Wait a minute or two for GitHub Pages to publish the site.
+Your project-site URL should usually be:
+`https://kieranslater.github.io/arctauridwebsite/`
 
-## What to edit next
+## Easy edits
+- Main text: `index.html`
+- Colours and layout: `styles.css`
+- Photos: replace files in `assets/` using the same filenames
 
-Search in `index.html` for these sections and update them when ready:
-
-- About Arctaurid Gundogs
-- Dog profiles
-- Litter enquiries
-- Contact
-
-## Easy next improvements
-
-- add pedigree links for each dog
-- add health testing details
-- add real contact details
-- swap photos around once you decide on final placements
-- split dog profiles into individual pages later if you want
+## Placeholders still to fill in
+- contact email
+- Instagram or other contact route
+- pedigree links for each dog
+- any extra notes you want on each dog
