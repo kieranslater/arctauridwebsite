@@ -73,6 +73,7 @@ input, select, textarea, button { font: inherit; }
   overflow: hidden;
 }
 .top-section > img {
+  filter: brightness(1.07) contrast(1.04) saturate(1.04);
   position: absolute;
   inset: 0;
   width: 100%;
@@ -83,8 +84,8 @@ input, select, textarea, button { font: inherit; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10, 12, 10, 0.08), rgba(10, 12, 10, 0.52)),
-    linear-gradient(90deg, rgba(10, 12, 10, 0.48), rgba(10, 12, 10, 0.12));
+    linear-gradient(180deg, rgba(10, 12, 10, 0.02), rgba(10, 12, 10, 0.34)),
+    linear-gradient(90deg, rgba(10, 12, 10, 0.30), rgba(10, 12, 10, 0.08));
 }
 .top-content {
   position: relative;
@@ -200,12 +201,15 @@ input, select, textarea, button { font: inherit; }
   font-size: 1.05rem;
   font-weight: 600;
 }
-.group-box summary::-webkit-details-marker { display: none; }
-.summary-note {
+.group-box summary::after {
+  content: "+";
   color: var(--text-soft);
-  font-size: 0.86rem;
-  font-weight: 500;
+  font-size: 1.1rem;
 }
+.group-box[open] summary::after {
+  content: "−";
+}
+.group-box summary::-webkit-details-marker { display: none; }
 .group-body {
   padding: 0 1rem 1rem;
 }
